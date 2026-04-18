@@ -69,14 +69,14 @@ Tests are split into:
 ============================================================
 TIER 1 — Extension Summary Table
 ============================================================
-Extension          Count  Example Mnemonic
-------------------------------------------
-rv32_c                 1  e.g. C_JAL
-rv32_zk               10  e.g. AES32DSI
-rv64_a                11  e.g. AMOADD_D
-rv_i                  37  e.g. ADD
-rv_v                 627  e.g. VAADD_VV
-rv_zba                 3  e.g. SH1ADD
+Extension         |     Count     | Example Mnemonic
+----------------------------------------------------
+rv32_c            | 1 instruction | e.g. C_JAL
+rv32_zk           | 10 instructions | e.g. AES32DSI
+rv64_a            | 11 instructions | e.g. AMOADD_D
+rv_i              | 37 instructions | e.g. ADD
+rv_v              | 627 instructions | e.g. VAADD_VV
+rv_zba            | 3 instructions | e.g. SH1ADD
 ...
 
 ============================================================
