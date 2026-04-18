@@ -110,13 +110,15 @@ def print_tier1(instr_dict: dict) -> None:
     print("TIER 1 — Extension Summary Table")
     print("=" * 60)
     col_w = max(len(tag) for tag in groups) + 2
-    header = f"{'Extension':<{col_w}} {'Count':>6}  Example Mnemonic"
+    header = f"{'Extension':<{col_w}} | {'Count':^13} | Example Mnemonic"
     print(header)
     print("-" * len(header))
     for tag in sorted(groups):
         mnemonics = groups[tag]
+        count     = len(mnemonics)
         example   = mnemonics[0]
-        print(f"{tag:<{col_w}} {len(mnemonics):>6}  e.g. {example}")
+        count_str = f"{count} instruction{'s' if count != 1 else ''}"
+        print(f"{tag:<{col_w}} | {count_str:^13} | e.g. {example}")
 
     # --- Multi-extension instructions ---
     print(f"\n{'=' * 60}")
